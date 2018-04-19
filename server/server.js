@@ -8,10 +8,15 @@ const recordCollection = require('./modules/record-collection');
 app.use(express.static('server/public'));
 
 // routes (get, post, put, delete requests)
-app.get('/records', (rec, res) => {
+app.get('/records', (req, res) => {
     loaded('/records');
     res.send(recordCollection);
 });
+
+app.post('/add-record', (req, res) => {
+    loaded('/add-record');
+    res.sendStatus(200);
+})
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`)); // "Are you still there?" - Turret
 
