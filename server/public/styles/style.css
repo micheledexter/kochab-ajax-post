@@ -6,12 +6,29 @@ body {
 }
 h1, h2 {
     font-family: sans-serif;
+    margin-bottom: 0.5em;
+    padding-left: 5px;
 }
 h2 {
     background-color: lightblue;
     color: navy;
 }
-p {
+h3 {
+    font-family: serif;
+    margin-bottom: 0.5em;
+    padding-left: 5px;
+}
+li {
     font-family: cursive;
     color: black;
+}
+table {
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding-left: 5px; 
+    padding-right: 5px;
+    border: 1px solid black;
 }
