@@ -17,8 +17,6 @@ app.listen(PORT, () => console.log(`Listening on port ${PORT}`)); // "Are you st
 
 function loaded(name) {
     let message = 'Loaded';
-    if (name) {
-        message += ` ${name}`;
-    }
+    if (name) message += ` ${name}`;
     console.log(message);
 }

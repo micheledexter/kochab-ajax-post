@@ -11,11 +11,8 @@ $.ajax({
     url: '/records'
 }).then(function (response) {
     $('body').append('<div id="records"></div>');
-    $('#records').append('<h2>Record Collection</h2>')
 
     // Unordered List
-    $('#records').append('<h3>List</h3>');
-    $('#records').append('<ul></ul>');
     for (let record of response) {
         let title = record.title;
         let year = record.year;
@@ -25,9 +22,6 @@ $.ajax({
     }
     
     // Table
-    $('#records').append('<h3>Table</h3>');
-    $('#records').append('<table><thead><tr><th>Title</th><th>Artist</th><th>Year</th><th>Cost</th></tr></thead><tbody></tbody></table>');
-
     response.forEach(function(record) {
         let title = record.title;
         let year = record.year;
