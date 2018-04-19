@@ -33,16 +33,11 @@ $.ajax({
 });
 
 function addNewRecord() {
-    console.log('working');
-    let title = $('#title').val();
-    let year = Number($('#year').val());
-    let artist = $('#artist').val();
-    let cost = Number($('#cost').val());
-    let newRecord = {
-        title: title,
-        year: year,
-        artist: artist,
-        cost: cost
+    const newRecord = {
+        title: $('#title').val(),
+        year: Number($('#year').val()),
+        artist: $('#artist').val(),
+        cost: Number($('#cost').val())
     }
     console.log('New song object', newRecord);
     $.ajax({
