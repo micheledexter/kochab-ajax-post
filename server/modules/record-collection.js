@@ -1,4 +1,4 @@
-const recordCollection = [
+module.exports = [
     {
         title: 'My Happiness',
         year: 1948,
@@ -18,5 +18,3 @@ const recordCollection = [
         cost: 37000
     }
 ];
-
-module.exports = recordCollection;

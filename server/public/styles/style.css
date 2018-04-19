@@ -4,3 +4,14 @@
 body {
     color: slategray;
 }
+h1, h2 {
+    font-family: sans-serif;
+}
+h2 {
+    background-color: lightblue;
+    color: navy;
+}
+p {
+    font-family: cursive;
+    color: black;
+}
